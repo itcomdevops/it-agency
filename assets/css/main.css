@@ -1,18 +1,7 @@
-/**
-* Template Name: iLanding
-* Template URL: https://bootstrapmade.com/ilanding-bootstrap-landing-page-template/
-* Updated: Nov 12 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
-/*--------------------------------------------------------------
-# Font & Color Variables
-# Help: https://bootstrapmade.com/color-system/
---------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --default-font:"Montserrat", sans-serif;
   --heading-font: "Nunito",  sans-serif;
   --nav-font: "Inter",  sans-serif;
 }
@@ -249,7 +238,8 @@ h6 {
     padding: 18px 15px;
     font-size: 16px;
     font-family: var(--nav-font);
-    font-weight: 400;
+    font-weight: 500;
+    text-transform: uppercase;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -688,7 +678,7 @@ section,
 }
 
 .section-title h2 {
-  font-size: 32px;
+  font-size: 36px;
   font-weight: 700;
   margin-bottom: 20px;
   padding-bottom: 20px;
@@ -2325,9 +2315,6 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
-}
 
 
 /*--------------------------------------------------------------
@@ -2345,10 +2332,14 @@ section,
   padding: 20px;
   text-align: center;
   height: 146px;
+  transition: all 0.3s ease;
+  
+ 
 }
 
 .promo-stats .stat-item:hover {
   box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1);
+  transform: scale(1.05);
 }
 
 .promo-stats .stat-item .stat-icon {
@@ -2369,5 +2360,25 @@ section,
 
 .promo-stats .stat-item .stat-content {
   margin-top: 15px;
+}
+
+
+.rotate {
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column-reverse;
+  }
 }
 
