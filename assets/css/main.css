@@ -2328,3 +2328,46 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+
+/*--------------------------------------------------------------
+# Promo Stats Section
+--------------------------------------------------------------*/
+.promo-stats {
+
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+}
+
+.promo-stats .stat-item {
+  background-color: var(--surface-color);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  height: 146px;
+}
+
+.promo-stats .stat-item:hover {
+  box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1);
+}
+
+.promo-stats .stat-item .stat-icon {
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.promo-stats .stat-item .stat-icon i {
+  font-size: 24px;
+  color: var(--contrast-color);
+}
+
+.promo-stats .stat-item .stat-content {
+  margin-top: 15px;
+}
+
